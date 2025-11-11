@@ -14,6 +14,9 @@ Person::Person(string n, int d){
   name = n;
   id = d;
 }
+int getid(){
+  return id;
+}
 void Person:: display(){
   cout << "Name:" << name << "ID:" << id << endl;
 }
@@ -33,7 +36,7 @@ Student:: Student(string n, int d, int y, string m): Person(n, d){
         major = m;
     }
     void Student:: display(){
-        cout << "Name: " << name << "ID: " << id << "Year level: " << y << "Major: " << major << endl;
+        cout << "Student Info: " << endl; << "Name: " << name << endl; << "Year level: " << y << endl; << "Major: " << major << endl;
 
 }
 
@@ -46,7 +49,7 @@ department = d;
 experienceYears = e;
 
 void display(){
-cout << "Department: " << department << "Experience Years: " << experienceYears << endl;
+cout << "Department: " << department << endl << "Experience Years: " << experienceYears << endl;
 
 
 // ==================== Course Class Implementation ====================
@@ -71,9 +74,8 @@ currentStudents++;
 students[currentStudents] = s
 }
 displayCourseInfo(){
-  cout << "Course Code: " << courseCode << "Course Name: " << courseName <<
-  "Max Students: " << maxStudents << "Students: " <<
-  students << "Current Students: " <<
+  cout << "Course: " << courseName << endl <<
+  "Max Students: " << maxStudents << endl << "Currently enrolled: " << "(ID: " << Person.getid() << ")" << endl;
   currentStudents << endl;
 }
 
@@ -90,7 +92,7 @@ delete [] students;
 int main() {
   Person p();
   Student s();
-  Course c();
+  Course c("35CS","CS101- Itroduction to Programming", 3, "Omar Nabil");
   
     
   
