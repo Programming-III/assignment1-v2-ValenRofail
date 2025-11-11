@@ -9,16 +9,16 @@
 using namespace std;
 
 // ==================== Person Class Implementation =========================
-
-Person(string n, int d){
+class Person{
+Person::Person(string n, int d){
   name = n;
   id = d;
 }
-void display(){
+void Person:: display(){
   cout << "Name:" << name << "ID:" << id << endl;
 }
 
-
+}
 
 
 
