@@ -22,7 +22,8 @@ int Person:: getid(){
 void Person:: display(){
   cout << "Name:" << name << "ID:" << id << endl;
 }
-
+~Person(){
+}
 }
 
 
@@ -42,7 +43,8 @@ Student:: Student(string n, int d, int y, string m): Person(n, d){
         cout << "Student Info: " << endl; << "Name: " << name << endl; << "Year: " << y << endl; << "Major: " << major << endl;
 
 }
-
+~Student(){
+}
 
 
 // ==================== Instructor Class Implementation ====================
