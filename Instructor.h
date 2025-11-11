@@ -6,9 +6,12 @@ using namespace std;
 //#write Instructor class here
 
 
+private:
+string department;
+int experienceYears;
 
-
-
+public:
+dusplay();
 
 
 
