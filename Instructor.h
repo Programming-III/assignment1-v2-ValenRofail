@@ -11,6 +11,7 @@ string department;
 int experienceYears;
 
 public:
+Instructor(string n, int i, string d, int e): Person(n,d);
 dusplay();
 
 
