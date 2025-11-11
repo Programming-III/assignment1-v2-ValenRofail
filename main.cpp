@@ -41,9 +41,12 @@ Student:: Student(string n, int d, int y, string m): Person(n, d){
 
 // ==================== Instructor Class Implementation ====================
 
+Instructor:: Instructor(string n, int i, string d, int e): Person(n,d){
+department = d;
+experienceYears = e;
 
-
-
+void display(){
+cout << "Department: " << department << "Experience Years: " << experienceYears << endl;
 
 
 // ==================== Course Class Implementation ====================
