@@ -51,7 +51,32 @@ cout << "Department: " << department << "Experience Years: " << experienceYears 
 
 // ==================== Course Class Implementation ====================
 
-Course:: Course(string c
+Course:: Course(string c, string cn, int m, Student s, int cs){
+  courseCode= c;
+  courseName = cn;
+  int maxStudents = m;
+  students-> s;
+  currentStudents = cs;
+}
+void Course:: addStudent(const Student& s){
+  if(currentStudent == maxStudents){
+    cout << "Students reached maximum size" endl;
+  return;
+  }
+  else
+currentStudents++;
+students[currentStudents] = s
+}
+displayCourseInfo(){
+  cout << "Course Code: " << courseCode << "Course Name: " << courseName <<
+  "Max Students: " << maxStudents << "Students: " <<
+  students << "Current Students: " <<
+  currentStudents << endl;
+}
+
+~Course(){
+delete [] students;
+}
 
 
 
@@ -60,7 +85,8 @@ Course:: Course(string c
 
 // ==================== Main Function ====================
 int main() {
-   
+   Student s;
+  
     
     return 0;
 }
