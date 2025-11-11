@@ -18,7 +18,7 @@ Course(string c, string cn, int m, Student s, int cs);
 addStudent(const Student& s);
 displayCourseInfo();
 getCourseName();
-
+Course();
 ~Course();
 
 
