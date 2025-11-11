@@ -10,7 +10,10 @@ using namespace std;
 
 // ==================== Person Class Implementation =========================
 
-
+ Student(string n, int d, int y, string m): Person(n, d){
+        yearLlevel = y;
+        major = m;
+    }
 
 
 
