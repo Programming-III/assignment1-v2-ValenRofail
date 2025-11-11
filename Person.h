@@ -11,14 +11,8 @@ string name;
 int id;
 
 public:
-Person(string n, int d){
-  name = n;
-  id = d;
-}
-void display(){
-  cout << "Name:" << name << "ID:" << id << endl;
-}
-
+Person(string n, int d;
+void display();
 
 
 
