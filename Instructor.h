@@ -12,8 +12,9 @@ int experienceYears;
 
 public:
 Instructor(string n, int i, string d, int e): Person(n,d);
-dusplay();
-
+display();
+Instructor();
+~Instructor();
 
 
 
