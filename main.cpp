@@ -58,6 +58,9 @@ Course:: Course(string c, string cn, int m, Student s, int cs){
   students-> s;
   currentStudents = cs;
 }
+string Course:: getCourseName(){
+return courseName;
+}
 void Course:: addStudent(const Student& s){
   if(currentStudent == maxStudents){
     cout << "Students reached maximum size" endl;
@@ -85,7 +88,11 @@ delete [] students;
 
 // ==================== Main Function ====================
 int main() {
-   Student s;
+  Person p();
+  Student s();
+  Course c();
+  
+    
   
     
     return 0;
