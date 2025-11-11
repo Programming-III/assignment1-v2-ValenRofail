@@ -13,7 +13,8 @@ private:
 public:
     Student(string n, int d, int y, string m): Person(n, d);
     void display();
-
+    Student();
+~Student();
 
 
 
