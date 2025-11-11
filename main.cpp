@@ -10,11 +10,13 @@ using namespace std;
 
 // ==================== Person Class Implementation =========================
 class Person{
+Person:: Person(){
+}
 Person::Person(string n, int d){
   name = n;
   id = d;
 }
-int getid(){
+int Person:: getid(){
   return id;
 }
 void Person:: display(){
@@ -30,7 +32,8 @@ void Person:: display(){
 // ==================== Student Class Implementation ====================
 
 
-
+Student:: Student(){
+}
 Student:: Student(string n, int d, int y, string m): Person(n, d){
         yearLlevel = y;
         major = m;
@@ -53,7 +56,8 @@ cout << "Department: " << department << endl << "Experience Years: " << experien
 
 
 // ==================== Course Class Implementation ====================
-
+Course:: Course(){
+}
 Course:: Course(string c, string cn, int m, Student s, int cs){
   courseCode= c;
   courseName = cn;
@@ -96,6 +100,8 @@ int main() {
   Course c("35CS","CS101- Itroduction to Programming", 3, "Omar Nabil");
   c.displayCourseInfo();
   Instructor i("Dr Lina Khaled", 12456, "Computer Science" , 5);
+  addStudent(s);
+  
   i.display();
   s.display();
   
