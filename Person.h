@@ -13,7 +13,9 @@ int id;
 public:
 Person(string n, int d;
 void display();
-
+int getid(){
+  return id;
+}
 
 
 
