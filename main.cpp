@@ -36,7 +36,7 @@ Student:: Student(string n, int d, int y, string m): Person(n, d){
         major = m;
     }
     void Student:: display(){
-        cout << "Student Info: " << endl; << "Name: " << name << endl; << "Year level: " << y << endl; << "Major: " << major << endl;
+        cout << "Student Info: " << endl; << "Name: " << name << endl; << "Year: " << y << endl; << "Major: " << major << endl;
 
 }
 
@@ -49,7 +49,7 @@ department = d;
 experienceYears = e;
 
 void display(){
-cout << "Department: " << department << endl << "Experience Years: " << experienceYears << endl;
+cout << "Department: " << department << endl << "Experience Years: " << experienceYears << "years" << endl;
 
 
 // ==================== Course Class Implementation ====================
@@ -90,11 +90,14 @@ delete [] students;
 
 // ==================== Main Function ====================
 int main() {
-  Person p();
-  Student s();
+  Person p("Dr Lina", 12456);
+  Person p1("Omar Nabil", 134);
+  Student s("Omar Nabil", 134, 2, "Informatics");
   Course c("35CS","CS101- Itroduction to Programming", 3, "Omar Nabil");
-  
-    
+  c.displayCourseInfo();
+  Instructor i("Dr Lina Khaled", 12456, "Computer Science" , 5);
+  i.display();
+  s.display();
   
     
     return 0;
