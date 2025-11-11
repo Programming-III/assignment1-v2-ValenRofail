@@ -11,12 +11,13 @@ string name;
 int id;
 
 public:
-Person(string n, int d;
+Person(string n, int d);
+Person();
 void display();
 int getid(){
   return id;
 }
-
+~Person();
 
 
 
